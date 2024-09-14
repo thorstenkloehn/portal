@@ -1,0 +1,17 @@
+# Django spezifische Dateien
+*.log
+*.pot
+*.pyc
+portal/__pycache__/
+portal/media/
+
+# Umgebungsdateien
+.env
+
+# VS Code spezifische Dateien
+.vscode/
+
+# Virtuelle Umgebungen
+venv/
+.venv
+env
