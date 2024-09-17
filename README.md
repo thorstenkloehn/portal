@@ -39,4 +39,3 @@ python manage.py migrate # Datenbankmigrationen anwenden
 python manage.py runserver # Entwicklungsserver starten 
 python manage.py createsuperuser # Erstellen Sie einen Superuser
 ``` 
-## G
