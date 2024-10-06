@@ -76,7 +76,13 @@ TEMPLATES = [
         },
     },
 ]
+LEAFLET_CONFIG = {
+    # conf here
+    'TILES': 'https://ahrensburg.city/Bilder/{z}/{x}/{y}.png',
+    'DEFAULT_CENTER': (53.6768, 10.2376),
+    'DEFAULT_ZOOM': 13,
 
+}
 WSGI_APPLICATION = 'portal.wsgi.application'
 
 # Database

@@ -7,10 +7,27 @@
     <title>Document</title>
     {% leaflet_js %}
     {% leaflet_css %}
+    <style>
+
+        .leaflet-container {  /* all maps */
+            width:  100vw;
+            height: 95vh;
+        }
+    
+        #specialbigmap {
+            height: 800px;
+        }
+    
+        /* Resize the "display_raw" textbox */
+        .django-leaflet-raw-textarea {
+            width: 100%;
+        }
+    
+    </style>
 
 </head>
 <body>
-    {% leaflet_map "yourmap" %}
+    {% leaflet_map "restaurant" %}
     
 </body>
 </html>
