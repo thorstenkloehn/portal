@@ -12,14 +12,7 @@ pip install -r requirements.in # Abhängigkeiten installieren
 ## Fügen Sie die folgenden Umgebungsvariablen in die .env-Datei ein
 Mit dem Befehl `nano .env` können Sie die .env-Datei öffnen und die folgenden Umgebungsvariablen einfügen, mit Ihren eigenen Werten.
 ```bash
-DEBUG=True 
-SECRET_KEY=arschloch
-DATABASE_NAME=thorsten 
-DATABASE_USER=thorsten
-DATABASE_PASSWORD=Test
-DATABASE_HOST=localhost
-DATABASE_PORT=5432
-ALLOWED_HOSTS=localhost
+cp example.env .env
 ```
 ## OSM Datenbank in Modell Umwandeln
 ```
