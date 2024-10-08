@@ -2,3 +2,4 @@ Django==5.1
 psycopg2 
 django-environ
 gunicorn
+django-leaflet

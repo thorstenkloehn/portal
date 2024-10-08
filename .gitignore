@@ -16,3 +16,4 @@ venv/
 .venv
 env
 static
+osm/models.py
