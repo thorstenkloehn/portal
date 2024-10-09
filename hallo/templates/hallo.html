@@ -1,100 +1,21 @@
 {% load leaflet_tags %}
-{% load django_bootstrap5 %}
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Karte</title>
-    <!-- Bootstrap CSS -->
-    {% bootstrap_css %}
+    
+  
     {% leaflet_js %}
     {% leaflet_css %}
    
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            flex: 0 0 auto;
-        }
-
-        main {
-            flex: 1 0 auto;
-            display: flex;
-        }
-
-        .leaflet-container {
-            flex: 1;
-        }
-
-        /* Resize the "display_raw" textbox */
-        .django-leaflet-raw-textarea {
-            width: 80vw;
-        }
-    </style>
+  
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <h1 class="display-4">Restaurant Karte</h1>
-    </header>
 
-    <main>
         {% leaflet_map "restaurant" %}
-    </main>
 
-    {% bootstrap_javascript %}
-</body>
-</html>{% load leaflet_tags %}
-{% load django_bootstrap5 %}
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Karte</title>
-    <!-- Bootstrap CSS -->
-    {% bootstrap_css %}
-    {% leaflet_js %}
-    {% leaflet_css %}
-   
-    <style>
-        .leaflet-container {  /* all maps */
-            width:  100vw;
-            height: 100vh;
-        }
-    
-        #specialbigmap {
-            height: 100vh;
-        }
-    
-        /* Resize the "display_raw" textbox */
-        .django-leaflet-raw-textarea {
-            width: 80vw;
-        }
-    </style>
-</head>
-<body>
-    <header class="bg-primary text-white text-center py-3">
-        <h1 class="display-4">Restaurant Karte</h1>
-    </header>
-
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                {% leaflet_map "restaurant" %}
-            </div>
-        </div>
-    </main>
-
-    {% bootstrap_javascript %}
-</body>
-</html>
-</html>
+ </body>
+ </html>
