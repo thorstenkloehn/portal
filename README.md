@@ -18,6 +18,7 @@ cp example.env .env
 ```
 python manage.py startapp osm
 python manage.py inspectdb > osm/models.py
+python manage.py inspectdb Tabellenamen tabellename2 > osm/models.py
 ```
 
 ## Jetzt starten wir das Programm
